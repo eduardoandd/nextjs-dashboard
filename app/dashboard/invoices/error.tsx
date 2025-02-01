@@ -12,7 +12,8 @@ export default function Error({
     useEffect(() => {
         console.log(error);
         
-    }, [error]);
+    }, [error] // var em analise 
+    );
 
     return(
         <main className="flex h-full flex-col items-center justify-center">
