@@ -6,10 +6,10 @@ import { fetchLatestInvoices, fetchCardData } from '@/app/lib/data';
 import { Suspense } from 'react';
 import { RevenueChartSkeleton,LatestInvoicesSkeleton,CardsSkeleton, } from '@/app/ui/skeletons';
 import CardWrapper from '@/app/ui/dashboard/cards';
+
  
 export default async function Page() {
-  const latestInvoices = await fetchLatestInvoices();
- 
+
  
   return (
     <main>
@@ -33,3 +33,5 @@ export default async function Page() {
     </main>
   );
 }
+
+
